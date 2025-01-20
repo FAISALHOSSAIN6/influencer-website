@@ -264,6 +264,10 @@ footer{
         grid-template-columns: repeat(1,1fr);
        
     }
+    .card{
+       text-align: center;
+       
+    }
     .product{
         flex-direction: column-reverse;
         margin: 0 auto;
