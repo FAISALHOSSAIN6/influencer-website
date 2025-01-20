@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: rgb(241, 239, 239);
+} */
+
+header {
+    /* max-width: 1440px; */
+    margin: 50px 0px;
+}
+
+.navigation {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    color: #3A3A3A;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.lists {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+   
+}
+
+.list li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color:#3A3A3A ;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 30px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+ 
+
+/* hero section style */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+/* .hero-contant{
+    width: 60%;
+} */
+
+.hero-contant-title{
+    color: #3A3A3A;
+    font-weight: 800;
+    font-size: 3.25rem;
+}
+.hero-description{
+    color:#3A3A3A ;
+    font-size: 1rem;
+}
+
+.hero-img{
+    background-image: url(images/Circle\ design.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.hero-img img{
+    width: 100%;
+}
+.btt-1{
+    padding: 10px 24px;
+    margin-top: 20px;
+    color: white;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 30px;
+}
+
+/* logos style */
+
+.logos{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* collection style */
+
+.collection-sec{
+    width: 80%;
+    margin: 100px auto;
+}
+.collection-title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+/* .card img{
+    width: auto;
+} */
+.card h2{
+    color: #18191F;
+    font-weight: 600;
+}
+.card p{
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 14px;
+}
+.icon {
+    color: orange;
+    font-size: small;
+}
+
+.see-more{
+    color: #E02C6D;
+    text-align: end;
+    margin-top: 30px;
+}
+
+
+/* product section style  */
+
+.product{
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 90px; */
+}
+
+.product-img img{
+    width: 100%;
+}
+.product-contant{
+    width: 550px;
+}
+.pro-title{
+    font-size: 2.10rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+.pro-description{
+    font-size: .9rem;
+    color: #6C6C6C;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: start;
+}
+.pro-btn{
+    margin-top: 30px;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* footer section style  */
+
+
+footer{
+    background-color: #0A0826;
+    padding: 50px 0;
+}
+.footer-contant{
+    width: 30%;
+    margin: 0 auto;
+    color: #FFFFFF;
+   text-align: center;
+}
+.foot-title{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.footer-contant p{
+    font-weight: 300;
+    
+}
+.foot-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+
+/* responsive style   */
+
+
+@media screen and (max-width:576px) {
+    .nav-title{
+        text-align: center;
+    }
+    li a {
+        display: none;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-contant{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .hero-contant-title{
+        color: #3A3A3A;
+        font-weight: 800;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .hero-description{
+        text-align: center;
+    }
+    .logos{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 10px;
+       justify-content: center;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .product{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .product-contant{
+        text-align: center;
+        width: auto;
+    }
+    .pro-title{
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #0A0826;
+        text-align: center;
+    }
+    .pro-description{
+        font-size: .9rem;
+        color: #6C6C6C;
+        font-weight: normal;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+    .footer-contant{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
